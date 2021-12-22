@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tell me your dream
+        </title>
+    </head>
+    <body>
+        <div id="body">
+
+        <h1>Bạn có thể nói cho tôi biêt ước mơ của bạn không?</h1>
+        <h3>Ước mơ của những người khác:</h3>
+            
+        <p>Chơi game cả ngày</p>
+        <p>Ko cần rửa chén</p>
+        <p>Trúng độc đắt =)</p>
+        
+        <p id="chat1"></p>
+
+        <input type="text" id="text" placeholder="Nhập ước mơ của bạn vào đây" width="250px" height="100px"/>
+        <input type="submit" id="submit" value="Gửi"/>
+        <script>
+            document.getElementById("submit").onclick = function submit_btn (){
+                document.getElementById("text").value;
+                document.getElementById("chat1").innerHTML = text.value;
+                var chat_bott1 = document.getElementById("chat1").value;
+            };
+        </script>
+        </div>
+    </body>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 4cm;
+        }
+        input[type="text"] {
+    width: 200px;
+}
+    </style>
+</html>
